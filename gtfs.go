@@ -79,6 +79,7 @@ func loadGTFS(g *GTFS, filter map[string]bool) error {
 		"stop_times.txt":     &g.StopsTimes,
 		"transfers.txt":      &g.Transfers,
 		"trips.txt":          &g.Trips,
+    "translations.txt":   &g.Translations,
 	}
 	// Load the files
 	for file, dest := range filesToLoad {

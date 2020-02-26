@@ -11,6 +11,7 @@ type GTFS struct {
 	Calendars     []Calendar
 	CalendarDates []CalendarDate
 	Transfers     []Transfer
+  Translations  []Translation
 }
 
 // Route -
@@ -97,4 +98,12 @@ type Agency struct {
 	Timezone string `csv:"agency_timezone"`
 	Langue   string `csv:"agency_lang"`
 	Phone    string `csv:"agency_phone"`
+}
+
+// Translation
+type Translation struct {
+  TableName   string `csv:"table_name"`
+  FieldName   string `csv:"field_name"`
+  Language    string `csv:"language"`
+  Translation string `csv:"translation"`
 }
