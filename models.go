@@ -102,8 +102,7 @@ type Agency struct {
 
 // Translation
 type Translation struct {
-  TableName   string `csv:"table_name"`
-  FieldName   string `csv:"field_name"`
-  Language    string `csv:"language"`
-  Translation string `csv:"translation"`
+  TranslationId string `csv:"trans_id"`
+  Language      string `csv:"lang"`
+  Translation   string `csv:"translation"`
 }
