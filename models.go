@@ -103,6 +103,6 @@ type Agency struct {
 // Translation
 type Translation struct {
   TranslationId string `csv:"trans_id"`
-  Language      string `csv:"lang"`
   Translation   string `csv:"translation"`
+  Language      string `csv:"lang"`
 }
