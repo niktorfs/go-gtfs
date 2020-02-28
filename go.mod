@@ -1,4 +1,4 @@
-module github.com/artonge/go-gtfs
+module github.com/niktorfs/go-gtfs
 
 go 1.12
 
